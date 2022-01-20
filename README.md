@@ -11,7 +11,7 @@ This also provides a simple face_recognition command line tool that lets you do 
 #### Find all the faces that appear in a picture:
 
 ## Face Recognition with Python – 
-####Identify and recognize a person in the live real-time video.
+#### Identify and recognize a person in the live real-time video.
 
 In this deep learning project, we will learn how to recognize the human faces in live video with Python. We will build this project using python dlib’s facial recognition network. Dlib is a general-purpose software library. Using dlib toolkit, we can make real-world machine learning applications.
 
