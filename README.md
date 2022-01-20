@@ -29,6 +29,7 @@ pip3 install face_recognition
 We will build this python project in two parts. We will build two different python files for these two parts:
 
 [embedding.py](https://github.com/Richa2310/FaceDetection-using-OpenCV/blob/main/embeddings.ipynb): In this step, we will take images of the person as input. We will make the face embeddings of these images.
+
 [recognition.py](https://github.com/Richa2310/FaceDetection-using-OpenCV/blob/main/recognition.ipynb): Now, we will recognize that particular person from the camera frame.
 
 1. [embedding.py](https://github.com/Richa2310/FaceDetection-using-OpenCV/blob/main/embeddings.ipynb):
