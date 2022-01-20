@@ -29,7 +29,7 @@ pip3 install face_recognition
 We will build this python project in two parts. We will build two different python files for these two parts:
 
 [embedding.py](https://github.com/Richa2310/FaceDetection-using-OpenCV/blob/main/embeddings.ipynb): In this step, we will take images of the person as input. We will make the face embeddings of these images.
-[recognition.py]https://github.com/Richa2310/FaceDetection-using-OpenCV/blob/main/recognition.ipynb): Now, we will recognize that particular person from the camera frame.
+[recognition.py](https://github.com/Richa2310/FaceDetection-using-OpenCV/blob/main/recognition.ipynb): Now, we will recognize that particular person from the camera frame.
 
 1. [embedding.py](https://github.com/Richa2310/FaceDetection-using-OpenCV/blob/main/embeddings.ipynb):
 
@@ -60,7 +60,7 @@ f=open("ref_embed.pkl","wb")
 pickle.dump(embed_dictt,f)
 f.close()
 
-2. [recognition.py]https://github.com/Richa2310/FaceDetection-using-OpenCV/blob/main/recognition.ipynb):
+2. [recognition.py](https://github.com/Richa2310/FaceDetection-using-OpenCV/blob/main/recognition.ipynb):
 
 Here we will again create person’s embeddings from the camera frame. Then, we will match the new embeddings with stored embeddings from the pickle file. The new embeddings of same person will be close to its embeddings into the vector space. And hence we will be able to recognize the person.
 
