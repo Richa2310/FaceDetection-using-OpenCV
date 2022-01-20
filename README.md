@@ -36,51 +36,19 @@ We will build this python project in two parts. We will build two different pyth
 
 First, create a file embedding.py in your working directory. In this file, we will create face embeddings of a particular human face. We make face embeddings using face_recognition.face_encodings method. These face embeddings are a 128 dimensional vector. In this vector space, different vectors of same person images are near to each other. After making face embedding, we will store them in a pickle file.
 
-Paste the below code in this embedding.py file.
-
-Import necessary libraries:
-import sys
-import cv2 
-import face_recognition
-import pickle
-
 To identify the person in a pickle file, take its name and a unique id as input:
 name=input("enter name")
 ref_id=input("enter id")
 
 Create a pickle file and dictionary to store face encodings:
-
 Open webcam and 5 photos of a person as input and create its embeddings:
-
 To capture images, press ‘s’ five times. If you want to stop the camera press ‘q’:
 
 Update the pickle file with the face embedding.
-we stored the embed_dictt in a pickle file. Hence, to recognize that person in future we can directly load its embeddings from this file:
-
-f=open("ref_embed.pkl","wb")
-pickle.dump(embed_dictt,f)
-f.close()
 
 # 2. [recognition.py](https://github.com/Richa2310/FaceDetection-using-OpenCV/blob/main/recognition.ipynb):
 
 Here we will again create person’s embeddings from the camera frame. Then, we will match the new embeddings with stored embeddings from the pickle file. The new embeddings of same person will be close to its embeddings into the vector space. And hence we will be able to recognize the person.
-
-Now, create a new python file recognition.py and paste below code:
-
-Import the libraries:
-import face_recognition
-import cv2
-import numpy as np
-import glob
-import pickle
-Load the stored pickle files:
-f=open("ref_name.pkl","rb")
-ref_dictt=pickle.load(f)        
-f.close()
-f=open("ref_embed.pkl","rb")
-embed_dictt=pickle.load(f)      
-f.close()
-
 Create two lists, one to store ref_id and other for respective embedding:
 Start the webcam to recognize the person:
 
