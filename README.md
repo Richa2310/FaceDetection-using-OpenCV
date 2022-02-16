@@ -1,15 +1,9 @@
 # FaceDetection-using-OpenCV
-
-Built using dlib's state-of-the-art face recognition built with deep learning.
-
-## Face Recognition with Python – 
 ### Identify and recognize a person in the live real-time video.
 
 In this deep learning project, we will learn how to recognize the human faces in live video with Python. We will build this project using python dlib’s facial recognition network. Dlib is a general-purpose software library. Using dlib toolkit, we can make real-world machine learning applications.
 
-In this project, we will first understand the working of face recognizer. Then we will build face recognition with Python.
-
-## About dlib’s Face Recognition:
+### About dlib’s Face Recognition:
 Python provides face_recognition API which is built through dlib’s face recognition algorithms. This face_recognition API allows us to implement face detection, real-time face tracking and face recognition applications.
 
 # Project Prerequisites:
